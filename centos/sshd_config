@@ -1,0 +1,15 @@
+# Disable password authentication
+PasswordAuthentication no
+
+# Disable challenge-response authentication
+ChallengeResponseAuthentication no
+
+# Allow root login with SSH key
+PermitRootLogin without-password
+
+# Ensure SSH key authentication is allowed
+PubkeyAuthentication yes
+
+# Specify the location of the authorized keys file
+AuthorizedKeysFile  .ssh/authorized_keys
+
